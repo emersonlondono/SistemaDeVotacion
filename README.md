@@ -69,12 +69,13 @@ Abrir phpMyAdmin.
 [sistema_votacion.sql](https://github.com/user-attachments/files/32557961/sistema_votacion.sql)
 
 ## La configuración utilizada en el proyecto es:
-
+```
 Host: localhost
 
 Usuario: root
 
 Contraseña: 
+```
 
 Base de datos: sistema_votacion
 
@@ -93,17 +94,19 @@ Primero se debe iniciar sesión mediante:
 POST /login
 
 ## Ejemplo 
-
+```
 {
     "email": "admin@gmail.com",
     "password": "123456"
 }
-
+```
 ## Su respuesta tiene un Acces_token 
+```
 {
     "mensaje": "Inicio de sesión exitoso",
     "access_token": "TOKEN_GENERADO"
 }
+```
 
 ## Para utilizar los endpoints protegidos se debe enviar el token como:
 
@@ -112,25 +115,26 @@ Authorization: Bearer TOKEN_GENERADO
 Ejemplos de uso del API
 Iniciar sesión
 POST http://127.0.0.1:5000/login
-
+```
 Body:
 
 {
     "email": "admin@gmail.com",
     "password": "123456"
 }
-
+```
 Consultar personas
 GET http://127.0.0.1:5000/personas
 Registrar una persona
 POST http://127.0.0.1:5000/personas
 
 Body:
-
+```
 {
     "name": "Carlos Ramirez"
 }
 
+```
 Este endpoint requiere autenticación JWT.
 
 Consultar votantes
@@ -148,11 +152,12 @@ Registrar un votante
 POST http://127.0.0.1:5000/voters
 
 Body:
-
+```
 {
     "persona_id": 3,
     "email": "juan@gmail.com"
 }
+```
 
 Este endpoint requiere autenticación JWT.
 
@@ -172,11 +177,12 @@ Registrar candidato
 POST http://127.0.0.1:5000/candidates
 
 Body:
-
+```
 {
     "persona_id": 2,
     "party": "Partido Verde"
 }
+```
 
 Este endpoint requiere autenticación JWT.
 
@@ -184,11 +190,12 @@ Registrar un voto
 POST http://127.0.0.1:5000/votes
 
 Body:
-
+```
 {
     "voter_id": 1,
     "candidate_id": 1
 }
+```
 
 Este endpoint requiere autenticación JWT.
 
@@ -211,6 +218,7 @@ Cantidad de votos por candidato.
 Porcentaje de votos de cada candidato.
 
 Ejemplo:
+```
 {
     "total_votes": 3,
     "total_voters_who_voted": 3,
@@ -231,6 +239,7 @@ Ejemplo:
         }
     ]
 }
+```
 
 # Generación de estadísticas gráficas
 
@@ -262,6 +271,7 @@ Aquí se incluye la gráfica generada utilizando Pandas y Matplotlib.
 
 
 Estructura del proyecto
+```
 SistemaDeVotacion/
 │
 ├── src/
@@ -277,3 +287,4 @@ SistemaDeVotacion/
 │
 ├── .gitignore
 └── README.md
+```
