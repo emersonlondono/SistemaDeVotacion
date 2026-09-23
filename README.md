@@ -4,7 +4,7 @@ Autor
 
 Emerson Londoño
 
-Proyecto académico - Tecnología en Desarrollo de Software
+Prueba Tecnica - Tecnología en Desarrollo de Software
 
 # Sistema de Votación - API REST
 
