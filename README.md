@@ -71,8 +71,11 @@ Abrir phpMyAdmin.
 ## La configuración utilizada en el proyecto es:
 
 Host: localhost
+
 Usuario: root
+
 Contraseña: 
+
 Base de datos: sistema_votacion
 
 ## 5. Ejecutar la API
