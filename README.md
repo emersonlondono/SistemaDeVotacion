@@ -114,7 +114,9 @@ Authorization: Bearer TOKEN_GENERADO
 
 Ejemplos de uso del API
 Iniciar sesión
+```
 POST http://127.0.0.1:5000/login
+```
 ```
 Body:
 
@@ -124,9 +126,13 @@ Body:
 }
 ```
 Consultar personas
+```
 GET http://127.0.0.1:5000/personas
+```
 Registrar una persona
+```
 POST http://127.0.0.1:5000/personas
+```
 
 
 
@@ -140,7 +146,9 @@ Body:
 Este endpoint requiere autenticación JWT.
 
 Consultar votantes
+```
 GET http://127.0.0.1:5000/voters
+```
 
 También permite filtros:
 ```
