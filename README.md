@@ -143,15 +143,18 @@ Consultar votantes
 GET http://127.0.0.1:5000/voters
 
 También permite filtros:
-
+```
 GET http://127.0.0.1:5000/voters?name=Emerson
 GET http://127.0.0.1:5000/voters?email=gmail.com
+```
 
 Y paginación:
+```
 
 GET http://127.0.0.1:5000/voters?page=1&limit=5
 Registrar un votante
 POST http://127.0.0.1:5000/voters
+```
 
 Body:
 ```
@@ -164,19 +167,24 @@ Body:
 Este endpoint requiere autenticación JWT.
 
 Eliminar un votante
+```
 DELETE http://127.0.0.1:5000/voters/1
+```
 
 Este endpoint requiere autenticación JWT.
 
 Consultar candidatos
+```
 GET http://127.0.0.1:5000/candidates
-
+```
 También permite filtros:
+```
 
 GET http://127.0.0.1:5000/candidates?name=Laura
 GET http://127.0.0.1:5000/candidates?party=Verde
 Registrar candidato
 POST http://127.0.0.1:5000/candidates
+```
 
 Body:
 ```
@@ -188,8 +196,11 @@ Body:
 
 Este endpoint requiere autenticación JWT.
 
+```
+
 Registrar un voto
 POST http://127.0.0.1:5000/votes
+```
 
 Body:
 ```
@@ -208,9 +219,13 @@ El candidato exista.
 El votante no haya votado anteriormente.
 La persona no sea simultáneamente votante y candidato.
 Consultar votos
+```
 GET http://127.0.0.1:5000/votes
+```
 Consultar estadísticas
+```
 GET http://127.0.0.1:5000/votes/statistics
+```
 
 La respuesta contiene:
 
@@ -321,12 +336,6 @@ En caso de votar dos veces:
     
 <img width="1582" height="943" alt="image" src="https://github.com/user-attachments/assets/716afd1f-6ae7-4f99-9833-127b48e7eab4" />
 
-
-    
-
-
-
-   
 
 
 Estructura del proyecto
