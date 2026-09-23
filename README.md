@@ -93,13 +93,14 @@ Primero se debe iniciar sesión mediante:
 POST /login
 
 ## Ejemplo 
+
 {
     "email": "admin@gmail.com",
-    
     "password": "123456"
 }
 
-## Su respuesta tiene un Acces_token  {
+## Su respuesta tiene un Acces_token 
+{
     "mensaje": "Inicio de sesión exitoso",
     "access_token": "TOKEN_GENERADO"
 }
