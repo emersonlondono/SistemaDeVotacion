@@ -128,6 +128,8 @@ GET http://127.0.0.1:5000/personas
 Registrar una persona
 POST http://127.0.0.1:5000/personas
 
+
+
 Body:
 ```
 {
@@ -268,6 +270,63 @@ Aquí se incluye la gráfica generada utilizando Pandas y Matplotlib.
 
 
 <img width="787" height="708" alt="image" src="https://github.com/user-attachments/assets/e44d8b7e-4a43-4bba-a40d-f15f859bfce6" />
+
+## Algunas capturas de funcionamiento
+
+1. Login funcionando
+
+   <img width="1612" height="541" alt="image" src="https://github.com/user-attachments/assets/4569f1c2-e706-446c-8a43-b010e7cb63bc" />
+2. Creacion de Persona
+
+    <img width="1601" height="502" alt="image" src="https://github.com/user-attachments/assets/bffdc959-7d47-44d7-968f-2f32111600a5" />
+## Se visualiza que se necesita el Token para poder agregar personas mediante el Post
+
+<img width="1611" height="512" alt="image" src="https://github.com/user-attachments/assets/f5c4aa45-1b87-40ec-b0ce-20eedf7dca44" />
+## Se visualiza el funcionamiento luego de authenticar el token, y se agrega el id de manera automatica como lo pide el caso de estudio.
+
+3. Registrar votantes
+
+<img width="1612" height="547" alt="image" src="https://github.com/user-attachments/assets/8913e92e-c3a5-4dc9-8b60-ef58df5ca45a" />
+
+4. Lista de votantes
+
+   <img width="511" height="912" alt="image" src="https://github.com/user-attachments/assets/fd506ffb-2268-468b-b6f6-e0cb4ecb329c" />
+
+5. Listado de candidatos
+
+<img width="772" height="936" alt="image" src="https://github.com/user-attachments/assets/e2cbe287-355a-464d-89fc-f568036ae941" />
+
+7. Registrar un voto
+<img width="1603" height="586" alt="image" src="https://github.com/user-attachments/assets/ee113151-fe56-4e7a-9e7f-cb57ef937bd8" />
+
+En caso de que el candidato y votante no existan: 
+
+<img width="1620" height="980" alt="image" src="https://github.com/user-attachments/assets/82436f15-00e0-4381-a544-ef12d102982d" />
+
+<img width="1593" height="597" alt="image" src="https://github.com/user-attachments/assets/16c03bac-52b5-48c6-b460-9e42af8570af" />
+
+En caso de votar dos veces: 
+
+<img width="1612" height="346" alt="image" src="https://github.com/user-attachments/assets/0d4e7b0e-3c29-4d4d-a617-ca72873af040" />
+
+9. Estadísticas
+
+   <img width="613" height="953" alt="image" src="https://github.com/user-attachments/assets/58beb17b-1da2-47a6-9653-132c6e4bbd36" />
+10. Validacion de que un votante no puede ser candidato y viceversa:
+    <img width="1578" height="398" alt="image" src="https://github.com/user-attachments/assets/f4f6466d-3b98-40b5-9318-617925066a75" />
+    <img width="1605" height="331" alt="image" src="https://github.com/user-attachments/assets/9905b635-a409-4641-bed2-eb6d79d48948" />
+11. Prueba de filtros de busqueda:
+
+    <img width="1605" height="507" alt="image" src="https://github.com/user-attachments/assets/d44da330-033e-40de-8e91-2ae3a1bccb9c" />
+    
+<img width="1582" height="943" alt="image" src="https://github.com/user-attachments/assets/716afd1f-6ae7-4f99-9833-127b48e7eab4" />
+
+
+    
+
+
+
+   
 
 
 Estructura del proyecto
